@@ -1,0 +1,21 @@
+{
+  "hidden_dim": 512,
+  "gen_lr":1e-3,
+  "grad_clip":10.0,
+  "g_dropout_keep_prob": 0.5,
+  "num_layers_gen":2,
+  "start_token": 2,
+  "temperature":1.0,
+
+  "dis_lr":1e-3,
+  "emb_dim": 512,
+  "filter_size": [2, 3],
+  "num_filters": [100, 200],
+  "l2_reg_lambda": 0.2,
+
+  "batch_size": 128,
+  "dis_batch_size": 512,
+  "train_gen_num": 80,
+  "train_dis_num": 60,
+  "ntest":1
+}

@@ -1,0 +1,21 @@
+{
+  "g_dropout_keep_prob": 0.9,
+  "gen_lr":2e-5,
+  "n_embd":768,
+  "n_head":12,
+  "n_layer":12,
+  "start_token": 2,
+  "temperature":1.0,
+
+  "dis_lr":1e-3,
+  "emb_dim": 512,
+  "filter_size": [2, 3],
+  "num_filters": [100, 200],
+  "l2_reg_lambda": 0.2,
+
+  "batch_size": 128,
+  "dis_batch_size": 512,
+  "train_gen_num": 40,
+  "train_dis_num": 60,
+  "ntest":1
+}
