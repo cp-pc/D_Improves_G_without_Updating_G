@@ -117,9 +117,8 @@ class GPT2D(Gens):
                 print('epoch:' + str(epoch) + ' loss: ' + str(loss) + ' \t time:' + str(end - start))
                 if (epoch + 1) % self.ntest == 0:
                     values = gen_valid_nll.get_score()
-                    curr_nll = values['valid_nll'] if 'valid_nll' in values else 1000
-                    if curr_nll < best_nll:
-                        best_nll = curr_nll
+                    if values < best_nll:
+                        best_nll = values
                         # save pre_train
                         saver.save(self.sess, os.path.join(self.save_path, "gen", 'train_best'))
                         print('gen store')
